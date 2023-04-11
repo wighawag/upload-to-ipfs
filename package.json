@@ -1,6 +1,6 @@
 {
   "name": "upload-to-ipfs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "cli to upload a folder to IPFS. It currently achieves that using nft.storage",
   "author": "wighawag@gmail.com",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "upload-to-ipfs": "dist/cli.cjs"
   },
   "dependencies": {
-    "dotenv-set": "^0.1.1",
+    "dotenv-set": "^0.2.0",
     "files-from-path": "^0.2.6",
     "nft.storage": "^7.0.0"
   },

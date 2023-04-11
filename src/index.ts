@@ -3,9 +3,7 @@ import { filesFromPath } from "files-from-path";
 import path from "path";
 import fs from "fs";
 
-import loadEnv from "dotenv-set";
-// hmm, I am lost
-((loadEnv as any).default || (loadEnv as any))();
+import { loadEnv } from "dotenv-set";
 
 export async function upload(directoryPath: string, outputFile?: string) {
   const files = filesFromPath(directoryPath, {

@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   dotenv-set:
-    specifier: ^0.1.1
-    version: 0.1.1
+    specifier: ^0.2.0
+    version: 0.2.0
   files-from-path:
     specifier: ^0.2.6
     version: 0.2.6
@@ -716,8 +716,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /dotenv-set@0.1.1:
-    resolution: {integrity: sha512-xtf7/fZl795ykyp9ffcwAUropLnktyjrGnjSAV6mmui3xPqiUuRjjJQ8dAFANd6qKV14+rGpk1/d6hTDPJ2yxA==}
+  /dotenv-set@0.2.0:
+    resolution: {integrity: sha512-iUPfgxM7/MnTVBHV4BAQUunETdHxbnu4dxqbBFN9JjMU4TrnaVkVRc+6/wJzPthFCq6HlwGRbtXOqwfAeVFdjw==}
     hasBin: true
     dependencies:
       dotenv: 16.0.3
