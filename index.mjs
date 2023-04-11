@@ -3,8 +3,8 @@ import { filesFromPath } from "files-from-path";
 import path from "path";
 import fs from "fs";
 
-import dotenv from "dotenv";
-dotenv.config();
+import {loadEnv} from "dotenv-set";
+loadEnv();
 
 const token = process.env.NFT_STORAGE_API_TOKEN;
 
