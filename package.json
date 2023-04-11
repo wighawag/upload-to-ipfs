@@ -1,21 +1,29 @@
 {
   "name": "upload-to-ipfs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "cli to upload a folder to IPFS. It currently achieves that using nft.storage",
   "author": "wighawag@gmail.com",
   "license": "MIT",
   "keywords": [],
   "type": "module",
-  "main": "index.mjs",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
-    "upload-to-ipfs": "index.mjs"
+    "upload-to-ipfs": "dist/cli.cjs"
   },
   "dependencies": {
     "dotenv-set": "^0.1.1",
     "files-from-path": "^0.2.6",
     "nft.storage": "^7.0.0"
   },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "tsup": "^6.7.0",
+    "typescript": "^4.9.5"
+  },
   "scripts": {
-    "test": "dotenv-set node index.mjs"
+    "build": "tsup --entry src/index.ts --entry src/cli.ts --dts --format esm,cjs",
+    "test": "node dist/cli.js"
   }
 }
